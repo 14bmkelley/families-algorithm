@@ -1,18 +1,18 @@
-### The Sigma Phi Delta big and little matching algorithm ###
+# The Sigma Phi Delta big and little matching algorithm #
 
 Note: Requires Java 7+ and Make to build and run.
 
-# To compile: #
+### To compile: ###
 ```
 make
 ```
 
-# To run: #
+### To run: ###
 ```
-do whatever
+java Main [-h -f] <bigsCSV> <littlesCSV>
 ```
 
-# To clean: #
+### To clean: ###
 ```
 make clean
 ```
