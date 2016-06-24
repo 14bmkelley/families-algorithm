@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Matrix {
@@ -33,7 +34,7 @@ public class Matrix {
 
          Scanner big = new Scanner(bigs.nextLine());
          big.useDelimiter("\",\"");
-         matrix.add(new ArrayList<Entry>());
+         matrix.add(new ArrayList<Connection>());
 
          skipForward(nameIndex, big);
          String bigName = big.next();
@@ -45,9 +46,9 @@ public class Matrix {
             String littleName = big.next();
             littleIndices.put(littleName, col);
 
-            Connection c = new Connection(bigName, littlesName);
-            c.setBigOpinion(i + 1);
-            matrix.get(counter).get(col) = c;
+            Connection c = new Connection(bigName, littleName);
+            c.setBigOpinion(counter + 1);
+            matrix.get(counter).set(col, c);
 
          }
 
