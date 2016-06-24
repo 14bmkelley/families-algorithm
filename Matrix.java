@@ -47,7 +47,7 @@ public class Matrix {
             littleIndices.put(littleName, col);
 
             Connection c = new Connection(bigName, littleName);
-            c.setBigOpinion(counter + 1);
+            c.setBigOpinion(col + 1);
             matrix.get(counter).set(col, c);
 
          }
